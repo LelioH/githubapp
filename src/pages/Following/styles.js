@@ -11,19 +11,22 @@ export default StyleSheet.create({
     backgroundColor: '#1F1F1F',
     height: 126,
   },
+  back: {
+    margin: 10,
+  },
   githubUser: {
     margin: 10,
     fontSize: 17,
     fontFamily: 'HelveticaNeue-Bold',
     color: '#FFFFFF',
   },
-  logOff: {
+  save: {
     margin: 10,
     flexDirection: 'row',
     alignItems: 'baseline',
     justifyContent: 'center',
   },
-  logOffText: {
+  saveText: {
     marginRight: 5,
     fontSize: 17,
     fontFamily: 'HelveticaNeue-Light',

@@ -10,24 +10,27 @@ import {
 
 import Feather from 'react-native-vector-icons/Feather';
 
-import styles from './styles';
+Feather.loadFont();
 
-import api from '../../services/api';
+import styles from './styles';
 
 import Avatar from '../../assets/avatar.png';
 
-export default function Profile({navigation}) {
+export default function Following({navigation}) {
   return (
     <>
       <SafeAreaView style={styles.screen}>
         <ScrollView>
           <View style={styles.header}>
-            <Text style={styles.githubUser}>#github.user</Text>
             <TouchableOpacity
-              style={styles.logOff}
-              onPress={() => navigation.navigate('Login')}>
-              <Text style={styles.logOffText}>Sair</Text>
-              <Feather name="log-out" size={17} color="#D03434" />
+              style={styles.back}
+              onPress={() => navigation.navigate('Profile')}>
+              <Feather name="arrow-left" size={26} color="#FFFFFF" />
+            </TouchableOpacity>
+            <Text style={styles.githubUser}>#github.user</Text>
+            <TouchableOpacity style={styles.save}>
+              <Text style={styles.saveText}>Salvar</Text>
+              <Feather name="log-in" size={17} color="#5CBC29" />
             </TouchableOpacity>
           </View>
 

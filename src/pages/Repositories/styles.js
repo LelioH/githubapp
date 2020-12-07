@@ -17,11 +17,6 @@ export default StyleSheet.create({
   back: {
     flexGrow: 2,
   },
-  backText: {
-    color: '#FFFFFF',
-    fontSize: 17,
-    fontFamily: 'HelveticaNeue-Bold',
-  },
   titleRepo: {
     flexGrow: 3,
     color: '#FFFFFF',
@@ -69,10 +64,6 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
-  star: {
-    color: '#FFCE00',
-    fontSize: 15,
-  },
   starNumber: {
     marginLeft: 6.5,
     color: '#FFFFFF',
@@ -82,37 +73,7 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
-  unlocked: {
-    color: '#63BF1F',
-    fontSize: 15,
-  },
   locked: {
-    color: '#CC042A',
-    fontSize: 15,
     marginLeft: 13,
-  },
-  footerContainer: {
-    width: '100%',
-    position: 'absolute',
-    bottom: 0,
-    borderTopLeftRadius: 15,
-    borderTopRightRadius: 15,
-    backgroundColor: '#FFFFFF',
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-around',
-    height: 80,
-  },
-  footer: {
-    alignItems: 'center',
-  },
-  footerIcon: {
-    fontSize: 20,
-    color: '#A5A5A5',
-  },
-  footerInfo: {
-    fontSize: 15,
-    fontFamily: 'HelveticaNeue-Medium',
-    color: '#A5A5A5',
   },
 });
