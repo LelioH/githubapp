@@ -4,20 +4,23 @@ import {
   ScrollView,
   View,
   Text,
-  TextInput,
   TouchableOpacity,
 } from 'react-native';
 
+import Feather from 'react-native-vector-icons/Feather';
+
 import styles from './styles';
 
-export default function Repositories() {
+export default function Repositories({navigation}) {
   return (
     <>
       <SafeAreaView style={styles.screen}>
         <ScrollView>
           <View style={styles.header}>
-            <TouchableOpacity style={styles.back}>
-              <Text style={styles.backText}>Voltar</Text>
+            <TouchableOpacity
+              style={styles.back}
+              onPress={() => navigation.navigate('Profile')}>
+              <Feather name="arrow-left" size={26} color="#FFFFFF" />
             </TouchableOpacity>
             <Text style={styles.titleRepo}>X Repositórios</Text>
           </View>
@@ -32,15 +35,20 @@ export default function Repositories() {
             </Text>
             <View style={styles.repositoriesExtra}>
               <TouchableOpacity style={styles.extraStar}>
-                <Text style={styles.star}>S</Text>
+                <Feather name="star" size={18} color="#FFCE00" />
                 <Text style={styles.starNumber}>32</Text>
               </TouchableOpacity>
               <View style={styles.locks}>
                 <TouchableOpacity>
-                  <Text style={styles.unlocked}>G</Text>
+                  <Feather name="unlock" size={18} color="#63BF1F" />
                 </TouchableOpacity>
                 <TouchableOpacity>
-                  <Text style={styles.locked}>R</Text>
+                  <Feather
+                    style={styles.locked}
+                    name="lock"
+                    size={18}
+                    color="#CC042A"
+                  />
                 </TouchableOpacity>
               </View>
             </View>
@@ -56,15 +64,20 @@ export default function Repositories() {
             </Text>
             <View style={styles.repositoriesExtra}>
               <TouchableOpacity style={styles.extraStar}>
-                <Text style={styles.star}>S</Text>
+                <Feather name="star" size={18} color="#FFCE00" />
                 <Text style={styles.starNumber}>32</Text>
               </TouchableOpacity>
               <View style={styles.locks}>
                 <TouchableOpacity>
-                  <Text style={styles.unlocked}>G</Text>
+                  <Feather name="unlock" size={18} color="#63BF1F" />
                 </TouchableOpacity>
                 <TouchableOpacity>
-                  <Text style={styles.locked}>R</Text>
+                  <Feather
+                    style={styles.locked}
+                    name="lock"
+                    size={18}
+                    color="#CC042A"
+                  />
                 </TouchableOpacity>
               </View>
             </View>
@@ -80,15 +93,20 @@ export default function Repositories() {
             </Text>
             <View style={styles.repositoriesExtra}>
               <TouchableOpacity style={styles.extraStar}>
-                <Text style={styles.star}>S</Text>
+                <Feather name="star" size={18} color="#FFCE00" />
                 <Text style={styles.starNumber}>32</Text>
               </TouchableOpacity>
               <View style={styles.locks}>
                 <TouchableOpacity>
-                  <Text style={styles.unlocked}>G</Text>
+                  <Feather name="unlock" size={18} color="#63BF1F" />
                 </TouchableOpacity>
                 <TouchableOpacity>
-                  <Text style={styles.locked}>R</Text>
+                  <Feather
+                    style={styles.locked}
+                    name="lock"
+                    size={18}
+                    color="#CC042A"
+                  />
                 </TouchableOpacity>
               </View>
             </View>
@@ -104,15 +122,20 @@ export default function Repositories() {
             </Text>
             <View style={styles.repositoriesExtra}>
               <TouchableOpacity style={styles.extraStar}>
-                <Text style={styles.star}>S</Text>
+                <Feather name="star" size={18} color="#FFCE00" />
                 <Text style={styles.starNumber}>32</Text>
               </TouchableOpacity>
               <View style={styles.locks}>
                 <TouchableOpacity>
-                  <Text style={styles.unlocked}>G</Text>
+                  <Feather name="unlock" size={18} color="#63BF1F" />
                 </TouchableOpacity>
                 <TouchableOpacity>
-                  <Text style={styles.locked}>R</Text>
+                  <Feather
+                    style={styles.locked}
+                    name="lock"
+                    size={18}
+                    color="#CC042A"
+                  />
                 </TouchableOpacity>
               </View>
             </View>
@@ -128,157 +151,23 @@ export default function Repositories() {
             </Text>
             <View style={styles.repositoriesExtra}>
               <TouchableOpacity style={styles.extraStar}>
-                <Text style={styles.star}>S</Text>
+                <Feather name="star" size={18} color="#FFCE00" />
                 <Text style={styles.starNumber}>32</Text>
               </TouchableOpacity>
               <View style={styles.locks}>
                 <TouchableOpacity>
-                  <Text style={styles.unlocked}>G</Text>
+                  <Feather name="unlock" size={18} color="#63BF1F" />
                 </TouchableOpacity>
                 <TouchableOpacity>
-                  <Text style={styles.locked}>R</Text>
+                  <Feather
+                    style={styles.locked}
+                    name="lock"
+                    size={18}
+                    color="#CC042A"
+                  />
                 </TouchableOpacity>
               </View>
             </View>
-          </View>
-
-          <View style={styles.repository}>
-            <View style={styles.flag}>
-              <View style={styles.rectangle} />
-              <Text style={styles.repositoryName}>repository-name</Text>
-            </View>
-            <Text style={styles.repositoryDescription}>
-              repository description
-            </Text>
-            <View style={styles.repositoriesExtra}>
-              <TouchableOpacity style={styles.extraStar}>
-                <Text style={styles.star}>S</Text>
-                <Text style={styles.starNumber}>32</Text>
-              </TouchableOpacity>
-              <View style={styles.locks}>
-                <TouchableOpacity>
-                  <Text style={styles.unlocked}>G</Text>
-                </TouchableOpacity>
-                <TouchableOpacity>
-                  <Text style={styles.locked}>R</Text>
-                </TouchableOpacity>
-              </View>
-            </View>
-          </View>
-
-          <View style={styles.repository}>
-            <View style={styles.flag}>
-              <View style={styles.rectangle} />
-              <Text style={styles.repositoryName}>repository-name</Text>
-            </View>
-            <Text style={styles.repositoryDescription}>
-              repository description
-            </Text>
-            <View style={styles.repositoriesExtra}>
-              <TouchableOpacity style={styles.extraStar}>
-                <Text style={styles.star}>S</Text>
-                <Text style={styles.starNumber}>32</Text>
-              </TouchableOpacity>
-              <View style={styles.locks}>
-                <TouchableOpacity>
-                  <Text style={styles.unlocked}>G</Text>
-                </TouchableOpacity>
-                <TouchableOpacity>
-                  <Text style={styles.locked}>R</Text>
-                </TouchableOpacity>
-              </View>
-            </View>
-          </View>
-
-          <View style={styles.repository}>
-            <View style={styles.flag}>
-              <View style={styles.rectangle} />
-              <Text style={styles.repositoryName}>repository-name</Text>
-            </View>
-            <Text style={styles.repositoryDescription}>
-              repository description
-            </Text>
-            <View style={styles.repositoriesExtra}>
-              <TouchableOpacity style={styles.extraStar}>
-                <Text style={styles.star}>S</Text>
-                <Text style={styles.starNumber}>32</Text>
-              </TouchableOpacity>
-              <View style={styles.locks}>
-                <TouchableOpacity>
-                  <Text style={styles.unlocked}>G</Text>
-                </TouchableOpacity>
-                <TouchableOpacity>
-                  <Text style={styles.locked}>R</Text>
-                </TouchableOpacity>
-              </View>
-            </View>
-          </View>
-
-          <View style={styles.repository}>
-            <View style={styles.flag}>
-              <View style={styles.rectangle} />
-              <Text style={styles.repositoryName}>repository-name</Text>
-            </View>
-            <Text style={styles.repositoryDescription}>
-              repository description
-            </Text>
-            <View style={styles.repositoriesExtra}>
-              <TouchableOpacity style={styles.extraStar}>
-                <Text style={styles.star}>S</Text>
-                <Text style={styles.starNumber}>32</Text>
-              </TouchableOpacity>
-              <View style={styles.locks}>
-                <TouchableOpacity>
-                  <Text style={styles.unlocked}>G</Text>
-                </TouchableOpacity>
-                <TouchableOpacity>
-                  <Text style={styles.locked}>R</Text>
-                </TouchableOpacity>
-              </View>
-            </View>
-          </View>
-
-          <View style={styles.repository}>
-            <View style={styles.flag}>
-              <View style={styles.rectangle} />
-              <Text style={styles.repositoryName}>repository-name</Text>
-            </View>
-            <Text style={styles.repositoryDescription}>
-              repository description
-            </Text>
-            <View style={styles.repositoriesExtra}>
-              <TouchableOpacity style={styles.extraStar}>
-                <Text style={styles.star}>S</Text>
-                <Text style={styles.starNumber}>32</Text>
-              </TouchableOpacity>
-              <View style={styles.locks}>
-                <TouchableOpacity>
-                  <Text style={styles.unlocked}>G</Text>
-                </TouchableOpacity>
-                <TouchableOpacity>
-                  <Text style={styles.locked}>R</Text>
-                </TouchableOpacity>
-              </View>
-            </View>
-          </View>
-
-          <View style={styles.footerContainer}>
-            <TouchableOpacity style={styles.footer}>
-              <Text style={styles.footerIcon}>I</Text>
-              <Text style={styles.footerInfo}>Início</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.footer}>
-              <Text style={styles.footerIcon}>S</Text>
-              <Text style={styles.footerInfo}>Seguidores</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.footer}>
-              <Text style={styles.footerIcon}>S</Text>
-              <Text style={styles.footerInfo}>Seguindo</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.footer}>
-              <Text style={styles.footerIcon}>R</Text>
-              <Text style={styles.footerInfo}>Repos</Text>
-            </TouchableOpacity>
           </View>
         </ScrollView>
       </SafeAreaView>

@@ -10,9 +10,6 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  iconGH: {
-    color: '#FFCE00',
-  },
   inputLogin: {
     marginTop: 48,
     paddingLeft: 20,
@@ -33,6 +30,7 @@ export default StyleSheet.create({
   },
   buttonLogin: {
     marginTop: 19,
+    flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#FFCE00',
@@ -47,6 +45,7 @@ export default StyleSheet.create({
     shadowOpacity: 0.6,
   },
   buttonText: {
+    marginRight: 13,
     fontSize: 20,
     fontFamily: 'HelveticaNeue-Bold',
   },
