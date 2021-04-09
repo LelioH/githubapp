@@ -1,5 +1,5 @@
 # githubapp
-Teste made applying for an internship at Luby
+Test made applying for an internship at Luby
 
 1- npm install
 
